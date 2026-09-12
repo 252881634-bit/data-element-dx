@@ -1,0 +1,60 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '44px 60px 0 60px' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#062032', lineHeight: 1.28 }}>
+        3 个月内三项成果可见
+    </Text>
+    <Box style={{ width: 1160, height: 1, background: '#000000', marginTop: 12 }} />
+
+    <Box style={{ flexDirection: 'row', gap: 24, marginTop: 28, height: 268 }}>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#F2F5F3', borderRadius: 4, padding: '24px 22px' }}>
+            <Box style={{ width: 52, height: 52, borderRadius: 26, background: '#1F4E35', justifyContent: 'center', alignItems: 'center' }}>
+                <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#FFFFFF' }}>1</Text>
+            </Box>
+            <Text style={{ fontSize: 23, fontWeight: 'bold', color: '#062032', marginTop: 16 }}>集团经营日报自动生成</Text>
+            <Text style={{ fontSize: 18, color: '#44546A', lineHeight: 1.45, marginTop: 12 }}>
+                告别 2 人半日的手工汇总，管理层早上就能看到昨日全集团经营情况。
+            </Text>
+            <Box style={{ marginTop: 14, flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                <Box style={{ width: 3, height: 20, background: '#1F4E35' }} />
+                <Text style={{ fontSize: 17, color: '#1F4E35', fontWeight: 'bold' }}>T+3 → T+1</Text>
+            </Box>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#F2F5F3', borderRadius: 4, padding: '24px 22px' }}>
+            <Box style={{ width: 52, height: 52, borderRadius: 26, background: '#1F4E35', justifyContent: 'center', alignItems: 'center' }}>
+                <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#FFFFFF' }}>2</Text>
+            </Box>
+            <Text style={{ fontSize: 23, fontWeight: 'bold', color: '#062032', marginTop: 16 }}>跨市场经营驾驶舱</Text>
+            <Text style={{ fontSize: 18, color: '#44546A', lineHeight: 1.45, marginTop: 12 }}>
+                口径统一后，会上不再为"数字对不上"拉扯，六个市场可横向对比。
+            </Text>
+            <Box style={{ marginTop: 14, flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                <Box style={{ width: 3, height: 20, background: '#1F4E35' }} />
+                <Text style={{ fontSize: 17, color: '#1F4E35', fontWeight: 'bold' }}>争议当场消解</Text>
+            </Box>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#1F4E35', borderRadius: 4, padding: '24px 22px' }}>
+            <Box style={{ width: 52, height: 52, borderRadius: 26, background: '#7FB89E', justifyContent: 'center', alignItems: 'center' }}>
+                <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#062032' }}>3</Text>
+            </Box>
+            <Text style={{ fontSize: 23, fontWeight: 'bold', color: '#FFFFFF', marginTop: 16 }}>价格异常自动预警</Text>
+            <Text style={{ fontSize: 18, color: '#C4DBCF', lineHeight: 1.45, marginTop: 12 }}>
+                先统一单位口径，再上阈值预警；价格异动当天可知，不再事后复盘。
+            </Text>
+            <Box style={{ marginTop: 14, flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+                <Box style={{ width: 3, height: 20, background: '#7FB89E' }} />
+                <Text style={{ fontSize: 17, color: '#9FD8BC', fontWeight: 'bold' }}>周级 → 当日</Text>
+            </Box>
+        </Box>
+    </Box>
+
+    <Box style={{ marginTop: 24, flexDirection: 'row', alignItems: 'center', gap: 16, border: '1px solid #E7E6E6', borderRadius: 4, padding: '16px 24px' }}>
+        <Text style={{ fontSize: 19, color: '#062032', lineHeight: 1.45, flex: 1 }}>
+            <span style={{ fontWeight: 'bold' }}>为什么这三个能先做？</span>
+            因为它们的数据已经在系统里，属于地基（采集层）完成后即可兑现的成果，不依赖治理层全部完工。
+        </Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 20 }}>
+        <Text style={{ fontSize: 14, color: '#808080' }}>Source: 数据产品清单 I-01 / I-02 / I-03（一期成果包）</Text>
+        <Text style={{ fontSize: 14, color: '#808080' }}>16</Text>
+    </Box>
+</Slide>

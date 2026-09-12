@@ -1,0 +1,45 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '44px 60px 0 60px' }}>
+    <Text style={{ fontSize: 40, fontWeight: 'bold', color: '#062032', lineHeight: 1.2 }}>
+        本方案回答四个问题
+    </Text>
+    <Box style={{ width: 1160, height: 1, background: '#000000', marginTop: 12 }} />
+
+    <Box style={{ flexDirection: 'row', gap: 28, marginTop: 26, height: 200 }}>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#1F4E35', borderRadius: 4, padding: 26 }}>
+            <Text style={{ fontSize: 44, fontWeight: 'bold', color: '#FFFFFF', lineHeight: 1 }}>01</Text>
+            <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#FFFFFF', marginTop: 18 }}>我们现在在哪</Text>
+            <Text style={{ fontSize: 18, color: '#C4DBCF', lineHeight: 1.5, marginTop: 12 }}>
+                20 年交易数据，但既不是资产、也没产生价值
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#F2F5F3', borderRadius: 4, padding: 26 }}>
+            <Text style={{ fontSize: 44, fontWeight: 'bold', color: '#1F4E35', lineHeight: 1 }}>02</Text>
+            <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#062032', marginTop: 18 }}>机会有多大</Text>
+            <Text style={{ fontSize: 18, color: '#44546A', lineHeight: 1.5, marginTop: 12 }}>
+                政策在推，而我们握着别人拿不到的成交价
+            </Text>
+        </Box>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', gap: 28, marginTop: 22, height: 200 }}>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#F2F5F3', borderRadius: 4, padding: 26 }}>
+            <Text style={{ fontSize: 44, fontWeight: 'bold', color: '#1F4E35', lineHeight: 1 }}>03</Text>
+            <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#062032', marginTop: 18 }}>路怎么走</Text>
+            <Text style={{ fontSize: 18, color: '#44546A', lineHeight: 1.5, marginTop: 12 }}>
+                先补汇存治管的地基，再上服用模的价值层
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#1F4E35', borderRadius: 4, padding: 26 }}>
+            <Text style={{ fontSize: 44, fontWeight: 'bold', color: '#FFFFFF', lineHeight: 1 }}>04</Text>
+            <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#FFFFFF', marginTop: 18 }}>要领导批什么</Text>
+            <Text style={{ fontSize: 18, color: '#C4DBCF', lineHeight: 1.5, marginTop: 12 }}>
+                确权专项、专职编制、一期启动，三件事
+            </Text>
+        </Box>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 34 }}>
+        <Text style={{ fontSize: 14, color: '#808080' }}>Source: 集团A 数据要素建设总体方案（讨论稿）</Text>
+        <Text style={{ fontSize: 14, color: '#808080' }}>02</Text>
+    </Box>
+</Slide>

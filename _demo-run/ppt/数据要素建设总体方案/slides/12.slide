@@ -1,0 +1,69 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '44px 60px 0 60px' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#062032', lineHeight: 1.28 }}>
+        一期 6 个月 / 二期 8 个月 / 三期 12 个月
+    </Text>
+    <Box style={{ width: 1160, height: 1, background: '#000000', marginTop: 12 }} />
+
+    <Box style={{ marginTop: 30, flexDirection: 'row', alignItems: 'flex-end', height: 26 }}>
+        <Text style={{ fontSize: 15, color: '#808080', width: 130 }}>阶段</Text>
+        <Box style={{ flex: 1, flexDirection: 'row' }}>
+            <Box style={{ flex: 6 }}><Text style={{ fontSize: 15, color: '#808080' }}>第 1 – 6 月</Text></Box>
+            <Box style={{ flex: 8 }}><Text style={{ fontSize: 15, color: '#808080' }}>第 7 – 14 月</Text></Box>
+            <Box style={{ flex: 12 }}><Text style={{ fontSize: 15, color: '#808080' }}>第 15 – 26 月</Text></Box>
+        </Box>
+    </Box>
+
+    <Box style={{ height: 1, background: '#E7E6E6', marginTop: 8 }} />
+
+    <Box style={{ marginTop: 26, flexDirection: 'row', alignItems: 'center' }}>
+        <Box style={{ width: 130, flexDirection: 'column' }}>
+            <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#1F4E35' }}>一期</Text>
+            <Text style={{ fontSize: 16, color: '#808080', marginTop: 6 }}>地基</Text>
+        </Box>
+        <Box style={{ flex: 1 }}>
+            <Box style={{ width: '30%', height: 54, background: '#1F4E35', justifyContent: 'center', paddingLeft: 18 }}>
+                <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#FFFFFF' }}>采集 + 存储 + 目录雏形</Text>
+            </Box>
+        </Box>
+    </Box>
+
+    <Box style={{ marginTop: 22, flexDirection: 'row', alignItems: 'center' }}>
+        <Box style={{ width: 130, flexDirection: 'column' }}>
+            <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#2F6A4E' }}>二期</Text>
+            <Text style={{ fontSize: 16, color: '#808080', marginTop: 6 }}>治理</Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'row' }}>
+            <Box style={{ width: '30%' }} />
+            <Box style={{ width: '40%', height: 54, background: '#2F6A4E', justifyContent: 'center', paddingLeft: 18 }}>
+                <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#FFFFFF' }}>治理 + 主数据 + 权限 + 服务</Text>
+            </Box>
+        </Box>
+    </Box>
+
+    <Box style={{ marginTop: 22, flexDirection: 'row', alignItems: 'center' }}>
+        <Box style={{ width: 130, flexDirection: 'column' }}>
+            <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#7FA797' }}>三期</Text>
+            <Text style={{ fontSize: 16, color: '#808080', marginTop: 6 }}>价值</Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'row' }}>
+            <Box style={{ width: '70%' }} />
+            <Box style={{ width: '30%', height: 54, background: '#7FB89E', justifyContent: 'center', paddingLeft: 18 }}>
+                <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#062032' }}>应用 + 模型</Text>
+            </Box>
+        </Box>
+    </Box>
+
+    <Box style={{ marginTop: 22, flexDirection: 'row', alignItems: 'center' }}>
+        <Box style={{ width: 130 }}><Box style={{ width: 18, height: 18, background: '#1F4E35', transform: 'rotate(45deg)' }} /></Box>
+        <Box style={{ flex: 1, background: '#F2F5F3', borderRadius: 4, padding: '16px 22px' }}>
+            <Text style={{ fontSize: 19, color: '#062032', lineHeight: 1.45 }}>
+                <span style={{ fontWeight: 'bold' }}>里程碑：一期成果包 3 个月内交付</span> —— 作为后续投入的验证依据，也是本方案最关键的信心锚点。
+            </Text>
+        </Box>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 24 }}>
+        <Text style={{ fontSize: 14, color: '#808080' }}>Source: 实施路线图（架构阶段产出） ｜ Footnote: 周期为工作量月，不含招标与采购等待期</Text>
+        <Text style={{ fontSize: 14, color: '#808080' }}>12</Text>
+    </Box>
+</Slide>

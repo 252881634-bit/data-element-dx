@@ -1,0 +1,50 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '44px 60px 0 60px' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#062032', lineHeight: 1.28 }}>
+        请领导决策三件事
+    </Text>
+    <Box style={{ width: 1160, height: 1, background: '#000000', marginTop: 12 }} />
+
+    <Box style={{ flexDirection: 'row', gap: 24, marginTop: 28, height: 258 }}>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#1F4E35', padding: '24px 22px' }}>
+            <Text style={{ fontSize: 54, fontWeight: 'bold', color: '#7FB89E', lineHeight: 1 }}>01</Text>
+            <Text style={{ fontSize: 23, fontWeight: 'bold', color: '#FFFFFF', marginTop: 16, lineHeight: 1.3 }}>
+                是否启动数据权属界定专项
+            </Text>
+            <Text style={{ fontSize: 18, color: '#C4DBCF', lineHeight: 1.45, marginTop: 12 }}>
+                第一优先级。需法务专职参与，预计 3–6 个月出确权结论。
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#1F4E35', padding: '24px 22px' }}>
+            <Text style={{ fontSize: 54, fontWeight: 'bold', color: '#7FB89E', lineHeight: 1 }}>02</Text>
+            <Text style={{ fontSize: 23, fontWeight: 'bold', color: '#FFFFFF', marginTop: 16, lineHeight: 1.3 }}>
+                是否批准数据治理专职编制
+            </Text>
+            <Text style={{ fontSize: 18, color: '#C4DBCF', lineHeight: 1.45, marginTop: 12 }}>
+                2–3 人。现状无专职人员，无人则方案无法落地执行。
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#1F4E35', padding: '24px 22px' }}>
+            <Text style={{ fontSize: 54, fontWeight: 'bold', color: '#7FB89E', lineHeight: 1 }}>03</Text>
+            <Text style={{ fontSize: 23, fontWeight: 'bold', color: '#FFFFFF', marginTop: 16, lineHeight: 1.3 }}>
+                是否同意先做一期再评估
+            </Text>
+            <Text style={{ fontSize: 18, color: '#C4DBCF', lineHeight: 1.45, marginTop: 12 }}>
+                一期 6 个月。小范围验证，以成果包为后续投入的判断依据。
+            </Text>
+        </Box>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', gap: 24, marginTop: 24 }}>
+        <Box style={{ flex: 1, background: '#F2F5F3', borderRadius: 4, padding: '16px 22px' }}>
+            <Text style={{ fontSize: 18, color: '#062032', lineHeight: 1.45 }}>
+                <span style={{ fontWeight: 'bold' }}>不做什么（防追问）：</span>
+                办公流程数字化、商户满意度调研、一上来建数据中台 —— 三项均已说明原因，不占用数据项目资源。
+            </Text>
+        </Box>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 22 }}>
+        <Text style={{ fontSize: 14, color: '#808080' }}>Source: 领导汇报大纲（第七部分） ｜ Footnote: 决策事项需明确"批什么、批多少、什么时候批"</Text>
+        <Text style={{ fontSize: 14, color: '#808080' }}>20</Text>
+    </Box>
+</Slide>

@@ -1,0 +1,52 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '44px 60px 0 60px' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#062032', lineHeight: 1.28 }}>
+        20 年交易数据躺在系统里，<Box style={{ height: 0 }} />既未确权、也未产生价值
+    </Text>
+    <Box style={{ width: 1160, height: 1, background: '#000000', marginTop: 12 }} />
+
+    <Box style={{ flexDirection: 'row', gap: 24, marginTop: 30 }}>
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
+                <Box style={{ width: 4, height: 26, background: '#1F4E35' }} />
+                <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#1F4E35' }}>现状 CONTEXT</Text>
+            </Box>
+            <Text style={{ fontSize: 22, color: '#333333', lineHeight: 1.5, marginTop: 18 }}>
+                六个农批市场、20 年真实成交记录，每天产生进场、交易、结算、价格四类高密度数据。
+                体量上我们**不缺数据**，库表已到千级。
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
+                <Box style={{ width: 4, height: 26, background: '#1F4E35' }} />
+                <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#1F4E35' }}>矛盾 COMPLICATION</Text>
+            </Box>
+            <Text style={{ fontSize: 22, color: '#333333', lineHeight: 1.5, marginTop: 18 }}>
+                但这些数据**没有一项进入资产负债表**，也没有一个对外产品。
+                更关键的是：同一组数据，六个市场各算各的，单位甚至不统一。
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
+                <Box style={{ width: 4, height: 26, background: '#1F4E35' }} />
+                <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#1F4E35' }}>结论 RESOLUTION</Text>
+            </Box>
+            <Text style={{ fontSize: 22, color: '#333333', lineHeight: 1.5, marginTop: 18 }}>
+                现在的窗口期很明确：数据要素政策已经铺好路，
+                **我们只要把"地基"补齐，这些数据就能逐级变成资产。错过窗口，追赶成本更高。**
+            </Text>
+        </Box>
+    </Box>
+
+    <Box style={{ marginTop: 30, background: '#F2F5F3', borderRadius: 4, padding: '22px 28px', flexDirection: 'row', alignItems: 'center', gap: 28 }}>
+        <Text style={{ fontSize: 44, fontWeight: 'bold', color: '#1F4E35', lineHeight: 1 }}>20 年</Text>
+        <Box style={{ width: 1, height: 46, background: '#C4DBCF' }} />
+        <Text style={{ fontSize: 22, color: '#062032', lineHeight: 1.45, flex: 1 }}>
+            经营数据积累时长 —— 这是政策无法快速补齐的先发优势，**也是所有新进入者拿不到的东西**
+        </Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 26 }}>
+        <Text style={{ fontSize: 14, color: '#808080' }}>Source: 集团A 数据摸底摘要（会议材料） ｜ Footnote: 数据经脱敏</Text>
+        <Text style={{ fontSize: 14, color: '#808080' }}>04</Text>
+    </Box>
+</Slide>

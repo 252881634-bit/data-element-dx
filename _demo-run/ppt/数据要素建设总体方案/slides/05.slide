@@ -1,0 +1,45 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '44px 60px 0 60px' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#062032', lineHeight: 1.28 }}>
+        三个事实说明我们处在"有货无价"状态
+    </Text>
+    <Box style={{ width: 1160, height: 1, background: '#000000', marginTop: 12 }} />
+
+    <Box style={{ flexDirection: 'row', gap: 22, marginTop: 26, height: 300 }}>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#F2F5F3', borderRadius: 4, padding: '24px 22px' }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#7FA797', letterSpacing: 2 }}>事实 01</Text>
+            <Text style={{ fontSize: 54, fontWeight: 'bold', color: '#1F4E35', lineHeight: 1.05, marginTop: 10 }}>6 家</Text>
+            <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#062032', marginTop: 10 }}>各记各的账</Text>
+            <Text style={{ fontSize: 18, color: '#44546A', lineHeight: 1.45, marginTop: 10 }}>
+                集团看不到一张统一的经营全貌。要看数，得等各家把 Excel 报表报上来。
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#F2F5F3', borderRadius: 4, padding: '24px 22px' }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#7FA797', letterSpacing: 2 }}>事实 02</Text>
+            <Text style={{ fontSize: 54, fontWeight: 'bold', color: '#1F4E35', lineHeight: 1.05, marginTop: 10 }}>2 套</Text>
+            <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#062032', marginTop: 10 }}>计量单位并存</Text>
+            <Text style={{ fontSize: 18, color: '#44546A', lineHeight: 1.45, marginTop: 10 }}>
+                同一组价格，有市场按"元/斤"、有市场按"元/公斤"，横向一对比就是错的。
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#1F4E35', borderRadius: 4, padding: '24px 22px' }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#9FD8BC', letterSpacing: 2 }}>事实 03</Text>
+            <Text style={{ fontSize: 54, fontWeight: 'bold', color: '#FFFFFF', lineHeight: 1.05, marginTop: 10 }}>0 个</Text>
+            <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#FFFFFF', marginTop: 10 }}>对外数据产品</Text>
+            <Text style={{ fontSize: 18, color: '#C4DBCF', lineHeight: 1.45, marginTop: 10 }}>
+                价格指数这类最有价值的产出，目前完全空白，数据只在内部循环。
+            </Text>
+        </Box>
+    </Box>
+
+    <Box style={{ marginTop: 22, flexDirection: 'row', alignItems: 'center', gap: 16, background: '#FFFFFF', border: '1px solid #E7E6E6', borderRadius: 4, padding: '16px 24px' }}>
+        <Box style={{ width: 4, height: 40, background: '#1F4E35' }} />
+        <Text style={{ fontSize: 20, color: '#062032', lineHeight: 1.45, flex: 1 }}>
+            这三个事实不带抱怨，只说明一件事：<span style={{ fontWeight: 'bold' }}>我们的问题不在"数据不够"，而在"数据没被组织成资产"。</span>
+        </Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 20 }}>
+        <Text style={{ fontSize: 14, color: '#808080' }}>Source: 数据摸底摘要 ｜ 质量实测报告（6 维实测定稿）</Text>
+        <Text style={{ fontSize: 14, color: '#808080' }}>05</Text>
+    </Box>
+</Slide>

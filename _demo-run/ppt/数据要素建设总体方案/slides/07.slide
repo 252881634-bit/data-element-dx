@@ -1,0 +1,59 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '44px 60px 0 60px' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#062032', lineHeight: 1.28 }}>
+        政策在推，而我们握着别人拿不到的价格数据
+    </Text>
+    <Box style={{ width: 1160, height: 1, background: '#000000', marginTop: 12 }} />
+
+    <Box style={{ marginTop: 28, flexDirection: 'row', alignItems: 'center', height: 132 }}>
+        <Box style={{ flex: 1, height: 132, background: '#1F4E35', justifyContent: 'center', paddingLeft: 26 }}>
+            <Text style={{ fontSize: 26, fontWeight: 'bold', color: '#FFFFFF' }}>数据要素 × 现代农业</Text>
+            <Text style={{ fontSize: 18, color: '#C4DBCF', marginTop: 10 }}>政策方向</Text>
+        </Box>
+        <Box style={{ width: 56, height: 56, background: '#1F4E35', borderRadius: 28, justifyContent: 'center', alignItems: 'center', marginLeft: -28, zIndex: 2 }}>
+            <Text style={{ fontSize: 26, color: '#FFFFFF', fontWeight: 'bold' }}>×</Text>
+        </Box>
+        <Box style={{ flex: 1, height: 132, background: '#062032', justifyContent: 'center', paddingLeft: 40 }}>
+            <Text style={{ fontSize: 26, fontWeight: 'bold', color: '#FFFFFF' }}>跨 6 家市场实际成交价</Text>
+            <Text style={{ fontSize: 18, color: '#9FC7B4', marginTop: 10 }}>我们的独家资产</Text>
+        </Box>
+        <Box style={{ width: 56, height: 56, background: '#1F4E35', borderRadius: 28, justifyContent: 'center', alignItems: 'center', marginLeft: -28, zIndex: 2 }}>
+            <Text style={{ fontSize: 26, color: '#FFFFFF', fontWeight: 'bold' }}>=</Text>
+        </Box>
+        <Box style={{ flex: 1, height: 132, background: '#7FB89E', justifyContent: 'center', paddingLeft: 40 }}>
+            <Text style={{ fontSize: 26, fontWeight: 'bold', color: '#062032' }}>行业定价参考</Text>
+            <Text style={{ fontSize: 18, color: '#2C5A44', marginTop: 10 }}>我们要占的位置</Text>
+        </Box>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', gap: 24, marginTop: 30, height: 214 }}>
+        <Box style={{ flex: 1, flexDirection: 'column', borderTop: '2px solid #1F4E35', paddingTop: 18 }}>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1F4E35' }}>政策给了什么</Text>
+            <Text style={{ fontSize: 20, color: '#333333', lineHeight: 1.5, marginTop: 12 }}>
+                数据要素市场化的顶层设计已落地，地方对农业数据服务有明确支持方向。
+                <Box style={{ height: 0 }} />
+                <span style={{ color: '#808080' }}>→ 我们要做的不是"发明需求"，而是"接上已开的口子"。</span>
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', borderTop: '2px solid #1F4E35', paddingTop: 18 }}>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1F4E35' }}>别人缺什么</Text>
+            <Text style={{ fontSize: 20, color: '#333333', lineHeight: 1.5, marginTop: 12 }}>
+                外部机构能拿到的是报价、抽样、公开统计——**不是真实成交**。
+                <Box style={{ height: 0 }} />
+                <span style={{ color: '#808080' }}>→ 报价与成交之间的差距，就是我们的数据壁垒。</span>
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', borderTop: '2px solid #1F4E35', paddingTop: 18 }}>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#1F4E35' }}>我们有什么</Text>
+            <Text style={{ fontSize: 20, color: '#333333', lineHeight: 1.5, marginTop: 12 }}>
+                进场量、成交量、成交价、流向，四条链路都真实在我们的系统里跑。
+                <Box style={{ height: 0 }} />
+                <span style={{ color: '#808080' }}>→ 这种"全链路真实数据"极难被复制。</span>
+            </Text>
+        </Box>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 22 }}>
+        <Text style={{ fontSize: 14, color: '#808080' }}>Source: 政策公开信息梳理 ｜ 集团数据资产盘点</Text>
+        <Text style={{ fontSize: 14, color: '#808080' }}>07</Text>
+    </Box>
+</Slide>

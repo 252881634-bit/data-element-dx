@@ -1,0 +1,45 @@
+<Slide style={{ width: 1280, height: 720, background: 'linear-gradient(135deg, #062032 0%, #1F4E35 100%)', padding: 0, position: 'relative' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, flexDirection: 'row' }}>
+        <Box style={{ width: 490, height: 720, background: 'rgba(255,255,255,0.06)' }} />
+        <Box style={{ flex: 1, height: 720 }} />
+    </Box>
+
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 6, height: 720, background: '#7FB89E' }} />
+
+    <Box style={{ position: 'absolute', top: 96, left: 88, width: 1080, flexDirection: 'column' }}>
+        <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 14 }}>
+            <Box style={{ width: 44, height: 3, background: '#7FB89E' }} />
+            <Text style={{ fontSize: 18, color: '#9FC7B4', letterSpacing: 3 }}>DATA ASSET INITIATIVE 2026</Text>
+        </Box>
+
+        <Text style={{ fontSize: 76, fontWeight: 'bold', color: '#FFFFFF', lineHeight: 1.16, marginTop: 34 }}>
+            集团A 数据要素<Box style={{ height: 0 }} />
+            <span style={{ color: '#9FD8BC' }}>建设总体方案</span>
+        </Text>
+
+        <Text style={{ fontSize: 26, color: '#B9CFC4', lineHeight: 1.5, marginTop: 30, width: 780 }}>
+            把 20 年沉淀的真实交易数据，从"躺在系统里的资源"变成"能确权、能变现、能入表的资产"
+        </Text>
+
+        <Box style={{ width: 780, height: 1, background: 'rgba(255,255,255,0.22)', marginTop: 56 }} />
+
+        <Box style={{ flexDirection: 'row', gap: 60, marginTop: 28 }}>
+            <Box style={{ flexDirection: 'column', gap: 8 }}>
+                <Text style={{ fontSize: 15, color: '#7FA797', letterSpacing: 2 }}>汇报单位</Text>
+                <Text style={{ fontSize: 22, color: '#FFFFFF', fontWeight: 'bold' }}>集团A 数据管理部</Text>
+            </Box>
+            <Box style={{ flexDirection: 'column', gap: 8 }}>
+                <Text style={{ fontSize: 15, color: '#7FA797', letterSpacing: 2 }}>汇报对象</Text>
+                <Text style={{ fontSize: 22, color: '#FFFFFF', fontWeight: 'bold' }}>集团决策层</Text>
+            </Box>
+            <Box style={{ flexDirection: 'column', gap: 8 }}>
+                <Text style={{ fontSize: 15, color: '#7FA797', letterSpacing: 2 }}>日期</Text>
+                <Text style={{ fontSize: 22, color: '#FFFFFF', fontWeight: 'bold' }}>2026.09</Text>
+            </Box>
+        </Box>
+    </Box>
+
+    <Box style={{ position: 'absolute', top: 632, left: 88, width: 1080 }}>
+        <Text style={{ fontSize: 14, color: '#7FA797' }}>本材料为方案演示，数据均经脱敏处理 ｜ 讨论稿，不构成对外承诺</Text>
+    </Box>
+</Slide>

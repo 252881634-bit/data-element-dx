@@ -1,0 +1,17 @@
+<Slide style={{ width: 1280, height: 720, background: '#062032', padding: 0, position: 'relative' }}>
+    <Box style={{ position: 'absolute', top: 0, left: 0, width: 1280, height: 720, flexDirection: 'row', alignItems: 'center' }}>
+        <Box style={{ width: 470, justifyContent: 'center', alignItems: 'flex-start' }}>
+            <Text style={{ fontSize: 260, fontWeight: 'bold', color: 'rgba(255,255,255,0.10)', lineHeight: 1, marginLeft: 44 }}>03</Text>
+        </Box>
+        <Box style={{ width: 1, height: 240, background: 'rgba(255,255,255,0.18)' }} />
+        <Box style={{ flex: 1, flexDirection: 'column', gap: 18, paddingLeft: 64 }}>
+            <Text style={{ fontSize: 15, color: '#7FA797', letterSpacing: 4 }}>PART THREE</Text>
+            <Text style={{ fontSize: 48, fontWeight: 'bold', color: '#FFFFFF', lineHeight: 1.25 }}>
+                路径：先补地基，<Box style={{ height: 0 }} />再上价值
+            </Text>
+            <Text style={{ fontSize: 20, color: 'rgba(255,255,255,0.55)', lineHeight: 1.5, width: 560 }}>
+                Roadmap — 不搞大平台，分三步走
+            </Text>
+        </Box>
+    </Box>
+</Slide>

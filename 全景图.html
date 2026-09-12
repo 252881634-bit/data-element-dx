@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>data-element-dx · 七道工序全景图</title>
+<style>
+  :root{
+    --deep:#1F4E35;      /* 主色 深绿 */
+    --deep2:#2A6347;     /* 次级深绿 */
+    --mid:#4A8B6A;       /* 中绿 */
+    --light:#A8C9B5;     /* 浅绿 */
+    --pale:#E8F1EC;      /* 极浅绿 */
+    --pale2:#F4F9F6;     /* 背景浅绿 */
+    --ink:#1A2B22;       /* 正文深色 */
+    --ink2:#4A5B52;      /* 次要文字 */
+    --line:#C9DCD1;
+    --gold:#B08A3E;      /* 强调金 */
+    --bg:#FFFFFF;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",-apple-system,sans-serif;
+    background:var(--pale2);color:var(--ink);line-height:1.6;
+    padding:32px 20px 60px;
+  }
+  .wrap{max-width:1240px;margin:0 auto}
+
+  /* 头部 */
+  header{
+    background:linear-gradient(135deg,var(--deep) 0%,var(--deep2) 100%);
+    color:#fff;border-radius:14px;padding:30px 36px;margin-bottom:26px;
+    box-shadow:0 8px 24px rgba(31,78,53,.18);
+  }
+  header h1{font-size:25px;font-weight:700;letter-spacing:.5px;margin-bottom:8px}
+  header .sub{font-size:14px;opacity:.9}
+  header .meta{margin-top:14px;display:flex;flex-wrap:wrap;gap:10px}
+  header .tag{
+    background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);
+    padding:4px 12px;border-radius:20px;font-size:12.5px;
+  }
+
+  /* 通用卡片 */
+  .card{
+    background:var(--bg);border:1px solid var(--line);border-radius:12px;
+    padding:22px 24px;margin-bottom:22px;box-shadow:0 2px 8px rgba(31,78,53,.05);
+  }
+  .card h2{
+    font-size:17px;color:var(--deep);font-weight:700;margin-bottom:16px;
+    padding-left:11px;border-left:4px solid var(--deep);
+  }
+  .card h3{font-size:14.5px;color:var(--deep2);margin:16px 0 9px;font-weight:600}
+  .hint{font-size:13px;color:var(--ink2);margin-top:6px}
+
+  /* 七道工序 */
+  .ops{display:grid;grid-template-columns:repeat(7,1fr);gap:10px}
+  .op{
+    background:var(--pale);border:1.5px solid var(--line);border-radius:10px;
+    padding:16px 10px;text-align:center;transition:.2s;position:relative;
+  }
+  .op:hover{background:var(--light);border-color:var(--mid);transform:translateY(-3px);
+    box-shadow:0 6px 16px rgba(31,78,53,.14)}
+  .op .zi{font-size:27px;font-weight:700;color:var(--deep);line-height:1.2}
+  .op .nm{font-size:12.5px;color:var(--ink2);margin-top:7px}
+  .op .no{
+    position:absolute;top:6px;right:8px;font-size:10px;color:var(--mid);
+    background:#fff;border-radius:50%;width:16px;height:16px;line-height:16px;
+    border:1px solid var(--line);
+  }
+  .op.hl{background:var(--deep);border-color:var(--deep)}
+  .op.hl .zi{color:#fff}
+  .op.hl .nm{color:var(--light)}
+  .op.hl .no{color:var(--deep);border-color:var(--light)}
+
+  /* 技能表 */
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  thead th{
+    background:var(--deep);color:#fff;font-weight:600;padding:11px 12px;
+    text-align:left;font-size:12.5px;white-space:nowrap;
+  }
+  thead th:first-child{border-radius:8px 0 0 0}
+  thead th:last-child{border-radius:0 8px 0 0}
+  tbody td{padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  tbody tr:nth-child(even){background:var(--pale2)}
+  tbody tr:hover{background:var(--pale)}
+  td code{
+    font-family:"Cascadia Code",Consolas,monospace;font-size:12px;
+    background:var(--pale);color:var(--deep2);padding:2px 6px;border-radius:4px;
+  }
+  .badge{
+    display:inline-block;font-size:11px;padding:2px 8px;border-radius:10px;
+    font-weight:600;white-space:nowrap;
+  }
+  .b-prod{background:var(--deep);color:#fff}
+  .b-skel{background:var(--pale);color:var(--deep2);border:1px solid var(--line)}
+
+  /* 交付链 */
+  .chain{position:relative;padding-left:6px}
+  .step{
+    display:flex;gap:14px;position:relative;padding-bottom:16px;
+  }
+  .step:last-child{padding-bottom:0}
+  .step .dot{
+    flex:0 0 34px;height:34px;border-radius:50%;background:var(--deep);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:700;
+    z-index:2;box-shadow:0 0 0 4px var(--pale);
+  }
+  .step .dot.alt{background:var(--mid)}
+  .step .dot.gate{background:var(--gold)}
+  .step:not(:last-child)::before{
+    content:"";position:absolute;left:17px;top:34px;bottom:0;width:2px;background:var(--line);
+  }
+  .step .body{flex:1;background:var(--pale2);border:1px solid var(--line);
+    border-radius:9px;padding:12px 15px}
+  .step .body .t{font-size:14px;font-weight:600;color:var(--deep);margin-bottom:5px}
+  .step .body .d{font-size:12.5px;color:var(--ink2)}
+  .step .body .gate{
+    display:inline-block;margin-top:7px;font-size:11.5px;color:#7A5A16;
+    background:#FBF3E2;border:1px solid #E8D5A8;padding:2px 9px;border-radius:6px;
+  }
+
+  /* 卡片网格 */
+  .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .mini{
+    background:var(--pale2);border:1px solid var(--line);border-radius:9px;padding:15px;
+  }
+  .mini .h{font-size:13.5px;font-weight:600;color:var(--deep);margin-bottom:7px}
+  .mini .b{font-size:12.5px;color:var(--ink2)}
+
+  /* 门禁四检查 */
+  .checks{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+  .chk{
+    text-align:center;padding:16px 10px;border:1.5px dashed var(--mid);
+    border-radius:10px;background:var(--pale2);
+  }
+  .chk .n{font-size:22px;font-weight:700;color:var(--gold)}
+  .chk .t{font-size:13px;font-weight:600;color:var(--deep);margin:6px 0 4px}
+  .chk .d{font-size:11.5px;color:var(--ink2)}
+
+  /* 差异化 */
+  .diff{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+  .ditem{
+    display:flex;gap:11px;background:var(--pale2);border-left:3px solid var(--deep);
+    border-radius:0 8px 8px 0;padding:12px 14px;
+  }
+  .ditem .ic{font-size:17px;flex:0 0 auto}
+  .ditem .tx{font-size:12.5px;color:var(--ink2)}
+  .ditem .tx b{color:var(--deep);display:block;font-size:13px;margin-bottom:3px}
+
+  /* 四象限 */
+  .quad{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:6px}
+  .q{padding:14px;border-radius:9px;font-size:12.5px;border:1px solid var(--line)}
+  .q b{display:block;font-size:13px;margin-bottom:5px}
+  .q1{background:#E4F0E9;border-color:var(--mid)} .q1 b{color:var(--deep)}
+  .q2{background:#FBF6E8;border-color:#E0CB98} .q2 b{color:#8A6A1E}
+  .q3{background:#F2F6F4} .q3 b{color:var(--ink2)}
+  .q4{background:var(--pale2)} .q4 b{color:var(--ink2)}
+
+  footer{text-align:center;font-size:12px;color:var(--ink2);margin-top:30px;line-height:1.9}
+  footer a{color:var(--deep2);text-decoration:none;border-bottom:1px dotted var(--mid)}
+
+  @media(max-width:900px){
+    .ops{grid-template-columns:repeat(4,1fr)}
+    .grid3,.grid2,.checks,.diff{grid-template-columns:1fr}
+    header{padding:24px 20px} header h1{font-size:20px}
+    table{font-size:12px} thead th,tbody td{padding:9px 8px}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>data-element-dx · 数据要素 × 传统集团数字化转型交付套件</h1>
+    <div class="sub">七道工序全景图 ｜ 六核心技能 × 阶段门禁 × 端到端交付链</div>
+    <div class="meta">
+      <span class="tag">七道工序：汇 存 治 管 服 用 模</span>
+      <span class="tag">7 技能 · 8 模板 · 2 脚本</span>
+      <span class="tag">Apache-2.0</span>
+      <span class="tag">案例层零敏感数据</span>
+    </div>
+  </header>
+
+  <!-- 七道工序 -->
+  <div class="card">
+    <h2>一、七道工序（统一语言 · 所有交付物挂回此处）</h2>
+    <div class="ops">
+      <div class="op hl"><span class="no">1</span><div class="zi">汇</div><div class="nm">采集汇聚</div></div>
+      <div class="op hl"><span class="no">2</span><div class="zi">存</div><div class="nm">存储计算</div></div>
+      <div class="op hl"><span class="no">3</span><div class="zi">治</div><div class="nm">治理清洗</div></div>
+      <div class="op hl"><span class="no">4</span><div class="zi">管</div><div class="nm">资产管理运营</div></div>
+      <div class="op hl"><span class="no">5</span><div class="zi">服</div><div class="nm">服务共享</div></div>
+      <div class="op hl"><span class="no">6</span><div class="zi">用</div><div class="nm">应用变现</div></div>
+      <div class="op hl"><span class="no">7</span><div class="zi">模</div><div class="nm">模型算法智能</div></div>
+    </div>
+    <div class="hint">铁律：地基（汇存治管）未补，不上价值层（服用模）；对外口径在「10页合并稿 ↔ 全景图 ↔ 分册 ↔ 技术详解」四处一致。</div>
+  </div>
+
+  <!-- 技能映射 -->
+  <div class="card">
+    <h2>二、技能 × 工序映射</h2>
+    <table>
+      <thead>
+        <tr><th>技能</th><th>七道工序落点</th><th>核心交付物</th><th>状态</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code>dx-engagement-orchestrator</code><br><span class="hint">交付总控</span></td>
+          <td>全链编排</td>
+          <td>交付计划、门禁报告、口径校验表、七道工序全景图</td>
+          <td><span class="badge b-prod">生产级 v2.0</span></td>
+        </tr>
+        <tr>
+          <td><code>dx-industry-research</code><br><span class="hint">行业研究</span></td>
+          <td>外部洞察</td>
+          <td>行业研究报、政策机会清单</td>
+          <td><span class="badge b-skel">骨架</span></td>
+        </tr>
+        <tr>
+          <td><code>dx-competitor-scout</code><br><span class="hint">竞品调研</span></td>
+          <td>外部洞察</td>
+          <td>四维对标矩阵、可抄作业清单</td>
+          <td><span class="badge b-skel">骨架</span></td>
+        </tr>
+        <tr>
+          <td><code>dx-data-baseline</code><br><span class="hint">数据现状摸底</span></td>
+          <td><b>汇 + 存</b></td>
+          <td>系统清单、数据资产清单、数据流图、DCMM 成熟度分</td>
+          <td><span class="badge b-prod">生产级 v2.0</span></td>
+        </tr>
+        <tr>
+          <td><code>dx-architecture-opt</code><br><span class="hint">数据架构优化</span></td>
+          <td><b>存 + 治 + 管</b></td>
+          <td>数据底座蓝图、实施路线图、治理卡口检查表</td>
+          <td><span class="badge b-skel">骨架</span></td>
+        </tr>
+        <tr>
+          <td><code>dx-data-quality</code><br><span class="hint">数据质量提升</span></td>
+          <td><b>治</b></td>
+          <td>指标字典、数据标准、主数据方案、质量规则集</td>
+          <td><span class="badge b-skel">骨架</span></td>
+        </tr>
+        <tr>
+          <td><code>dx-application-plan</code><br><span class="hint">应用规划及呈现</span></td>
+          <td><b>服 + 用 + 模</b></td>
+          <td>场景地图、数据产品清单、入表路径、汇报 PPT</td>
+          <td><span class="badge b-prod">生产级 v2.0</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 交付链 -->
+  <div class="card">
+    <h2>三、标准交付链（含阶段门禁）</h2>
+    <div class="chain">
+      <div class="step">
+        <div class="dot alt">0</div>
+        <div class="body">
+          <div class="t">立项 · dx-engagement-orchestrator</div>
+          <div class="d">立项 8 问（画像/规模/驱动/关注点/范围/形态/约束/验收）→ 交付计划 + 案例探测</div>
+          <span class="gate">门禁：8 问清晰</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="dot">1</div>
+        <div class="body">
+          <div class="t">外部洞察（可并行）</div>
+          <div class="d">dx-industry-research ＋ dx-competitor-scout → 行业研究报、政策机会清单、对标矩阵</div>
+          <span class="gate">门禁：研究报 + 政策清单 + 对标矩阵</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="dot gate">2</div>
+        <div class="body">
+          <div class="t">★ 数据现状摸底（汇+存）· 关键门禁</div>
+          <div class="d">dx-data-baseline → 系统清单 + 数据资产清单 + 数据流图 + DCMM 成熟度初评</div>
+          <span class="gate">门禁：四件齐全，缺一不进架构</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="dot">3</div>
+        <div class="body">
+          <div class="t">数据架构优化（存+治+管）</div>
+          <div class="d">dx-architecture-opt → 数据底座蓝图 + 实施路线图 + 治理卡口检查表</div>
+          <span class="gate">门禁：三件齐全 + HALT 卡口</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="dot">4</div>
+        <div class="body">
+          <div class="t">数据质量提升（治）</div>
+          <div class="d">dx-data-quality → 指标字典 + 数据标准 + 主数据方案 + 质量规则集</div>
+          <span class="gate">门禁：指标字典 + 标准 + 规则集</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="dot">5</div>
+        <div class="body">
+          <div class="t">数据应用规划及呈现（服+用+模）</div>
+          <div class="d">dx-application-plan → 场景地图 + 数据产品清单 + 入表路径 + 领导汇报 PPT</div>
+          <span class="gate">门禁：场景地图 + 汇报 PPT</span>
+        </div>
+      </div>
+      <div class="step">
+        <div class="dot alt">6</div>
+        <div class="body">
+          <div class="t">收口与沉淀</div>
+          <div class="d">七道工序全景图 + 交付清单 + 口径一致性校验 → 回写 gotchas → 脱敏案例沉淀</div>
+          <span class="gate">门禁：四处口径一致</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 门禁四项 -->
+  <div class="card">
+    <h2>四、门禁四项检查（空模板不算通过）</h2>
+    <div class="checks">
+      <div class="chk"><div class="n">1</div><div class="t">存在性</div><div class="d">交付物文件是否存在</div></div>
+      <div class="chk"><div class="n">2</div><div class="t">实质性</div><div class="d">非空、非空壳（关键）</div></div>
+      <div class="chk"><div class="n">3</div><div class="t">挂接性</div><div class="d">是否挂回七道工序</div></div>
+      <div class="chk"><div class="n">4</div><div class="t">一致性</div><div class="d">对外数字与上阶段一致</div></div>
+    </div>
+  </div>
+
+  <!-- 应用场景四象限 -->
+  <div class="card">
+    <h2>五、应用场景地图（价值 × 可行性）</h2>
+    <div class="quad">
+      <div class="q q2"><b>⚠️ 战略储备</b>价值高但难落地 → 明确前置条件，排入中远期</div>
+      <div class="q q1"><b>★ 优先落地</b>价值高且可行 → 立即启动，作为第一阶段成果</div>
+      <div class="q q4"><b>❌ 暂不考虑</b>低价值且难 → 写进材料说明为何不做</div>
+      <div class="q q3"><b>○ 快速见效</b>易做但价值有限 → 批量纳入，低垂果实</div>
+    </div>
+  </div>
+
+  <!-- 差异化 -->
+  <div class="card">
+    <h2>六、四条差异化（为什么开源站得住）</h2>
+    <div class="diff">
+      <div class="ditem">
+        <div class="ic">🎯</div>
+        <div class="tx"><b>交付型 vs 工具型</b>别人给能力原子，我们给"交付流水线 + 阶段门禁 + 实物成果"——产出是能交给董事长的方案，不是代码</div>
+      </div>
+      <div class="ditem">
+        <div class="ic">🇨🇳</div>
+        <div class="tx"><b>中文国资独有骨架</b>七道工序、DCMM（GB/T 36073）对标、数据二十条/入表暂行规定/公共数据授权运营政策锚点</div>
+      </div>
+      <div class="ditem">
+        <div class="ic">🔗</div>
+        <div class="tx"><b>编排层（生态空白）</b>强制因果顺序与阶段门禁——现有任何开源 Skill 都没有编排层，这是最难复制的部分</div>
+      </div>
+      <div class="ditem">
+        <div class="ic">📚</div>
+        <div class="tx"><b>真实案例 gotchas</b>血泪教训（脱敏后沉淀）是抄不走的资产——案例层越用越值钱</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 融合来源 -->
+  <div class="card">
+    <h2>七、融合的上游开源能力（Apache-2.0 归属见 NOTICE.md）</h2>
+    <div class="grid3">
+      <div class="mini">
+        <div class="h">data-governance</div>
+        <div class="b">指标字典（Metric Dictionary）、具名 Owner、质量"实测而非宣称"、默认开放访问、血缘<br><b style="color:var(--deep2)">→ 落点 dx-data-quality</b></div>
+      </div>
+      <div class="mini">
+        <div class="h">des-governance-and-security</div>
+        <div class="b">RBAC/RLS、PII 分级、保留期与删除、审计日志、<b>HALT 治理卡口</b><br><b style="color:var(--deep2)">→ 落点 dx-architecture-opt</b></div>
+      </div>
+      <div class="mini">
+        <div class="h">csv-data-wrangler / duckdb-skills</div>
+        <div class="b">按数据规模选工具决策树（pandas→Polars/DuckDB→Spark）、DuckDB 直查做表画像<br><b style="color:var(--deep2)">→ 落点 dx-data-baseline</b></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div><b>data-element-dx-skillkit</b> ｜ 数据要素 × 传统集团数字化转型交付套件</div>
+    <div>案例层与技能层物理隔离 · <code>cases/</code> 零敏感数据 · 原始案例只在本地</div>
+    <div style="margin-top:8px">Apache-2.0 ｜ 详见 <a href="01-OPEN-SOURCE-PLAN.md">01-OPEN-SOURCE-PLAN.md</a> ｜ <a href="README.md">README.md</a></div>
+  </footer>
+
+</div>
+</body>
+</html>

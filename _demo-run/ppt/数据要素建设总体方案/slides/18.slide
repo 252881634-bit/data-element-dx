@@ -1,0 +1,54 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '44px 60px 0 60px' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#062032', lineHeight: 1.28 }}>
+        需新增专职 2–3 人，并建立 Owner 制
+    </Text>
+    <Box style={{ width: 1160, height: 1, background: '#000000', marginTop: 12 }} />
+
+    <Box style={{ flexDirection: 'row', gap: 24, marginTop: 22, height: 340 }}>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#1F4E35', padding: '24px 22px' }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#9FD8BC', letterSpacing: 2 }}>要什么人</Text>
+            <Text style={{ fontSize: 52, fontWeight: 'bold', color: '#FFFFFF', lineHeight: 1.05, marginTop: 14 }}>2–3 人</Text>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF', marginTop: 10 }}>数据治理专职编制</Text>
+            <Text style={{ fontSize: 18, color: '#C4DBCF', lineHeight: 1.45, marginTop: 12 }}>
+                现状<span style={{ fontWeight: 'bold' }}>无专职人员</span>，是方案最大的落地短板。无人则一切规则无法执行。
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#F2F5F3', padding: '24px 22px' }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#7FA797', letterSpacing: 2 }}>要什么机制</Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#062032', marginTop: 14 }}>三级 Owner 体系</Text>
+            <Box style={{ flexDirection: 'column', gap: 12, marginTop: 14 }}>
+                <Text style={{ fontSize: 18, color: '#333333', lineHeight: 1.45 }}>
+                    <span style={{ fontWeight: 'bold' }}>指标 Owner</span>：每个指标一个人负责，10 个核心指标全部具名
+                </Text>
+                <Text style={{ fontSize: 18, color: '#333333', lineHeight: 1.45 }}>
+                    <span style={{ fontWeight: 'bold' }}>业务域 Owner</span>：6 个域各一人，须写人名而非"数据部"
+                </Text>
+                <Text style={{ fontSize: 18, color: '#333333', lineHeight: 1.45 }}>
+                    <span style={{ fontWeight: 'bold' }}>集团治理小组</span>：跨市场协调，裁决口径冲突
+                </Text>
+            </Box>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#F2F5F3', padding: '24px 22px' }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#7FA797', letterSpacing: 2 }}>要什么钱与时间</Text>
+            <Text style={{ fontSize: 22, fontWeight: 'bold', color: '#062032', marginTop: 14 }}>按 IT 预算另列</Text>
+            <Text style={{ fontSize: 18, color: '#333333', lineHeight: 1.45, marginTop: 14 }}>
+                一期以<span style={{ fontWeight: 'bold' }}> 6 个月为最小可用范围</span>，投入产出的验证点就设在一期成果包。
+                <Box style={{ height: 0 }} />
+                不追求一次性大投入，先小范围跑通再评估加码。
+            </Text>
+        </Box>
+    </Box>
+
+    <Box style={{ marginTop: 18, flexDirection: 'row', alignItems: 'center', gap: 16, background: '#FFFFFF', border: '1px solid #E7E6E6', borderRadius: 4, padding: '14px 22px' }}>
+        <Box style={{ width: 4, height: 34, background: '#1F4E35' }} />
+        <Text style={{ fontSize: 18, color: '#062032', lineHeight: 1.45, flex: 1 }}>
+            <span style={{ fontWeight: 'bold' }}>为什么 Owner 必须是人？</span>
+            因为"数据部负责"等于没人负责；口径争议需要一个人能拍板签字，这是审计与追责的基础。
+        </Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 16 }}>
+        <Text style={{ fontSize: 14, color: '#808080' }}>Source: 价值量化表（投入侧） ｜ 数据质量阶段 Owner 现状盘点</Text>
+        <Text style={{ fontSize: 14, color: '#808080' }}>18</Text>
+    </Box>
+</Slide>

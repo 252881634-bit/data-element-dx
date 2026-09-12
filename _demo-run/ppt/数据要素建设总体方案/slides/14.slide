@@ -1,0 +1,59 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '44px 60px 0 60px' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#062032', lineHeight: 1.28 }}>
+        DCMM L2，接入 14 系统，库表千级
+    </Text>
+    <Box style={{ width: 1160, height: 1, background: '#000000', marginTop: 12 }} />
+
+    <Box style={{ flexDirection: 'row', gap: 20, marginTop: 24, height: 220 }}>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#1F4E35', padding: 22 }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#9FD8BC', letterSpacing: 2 }}>成熟度等级</Text>
+            <Text style={{ fontSize: 68, fontWeight: 'bold', color: '#FFFFFF', lineHeight: 1, marginTop: 14 }}>L2</Text>
+            <Text style={{ fontSize: 19, color: '#C4DBCF', marginTop: 12 }}>受管理级（加权 1.7 / 5）</Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#F2F5F3', padding: 22 }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#7FA797', letterSpacing: 2 }}>接入系统</Text>
+            <Text style={{ fontSize: 68, fontWeight: 'bold', color: '#1F4E35', lineHeight: 1, marginTop: 14 }}>14</Text>
+            <Text style={{ fontSize: 19, color: '#44546A', marginTop: 12 }}>个（21 个系统中 7 个为离线文件）</Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#F2F5F3', padding: 22 }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#7FA797', letterSpacing: 2 }}>库表规模</Text>
+            <Text style={{ fontSize: 68, fontWeight: 'bold', color: '#1F4E35', lineHeight: 1, marginTop: 14 }}>千级</Text>
+            <Text style={{ fontSize: 19, color: '#44546A', marginTop: 12 }}>1,120 张表 + 约 200 个 Excel</Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#F2F5F3', padding: 22 }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#7FA797', letterSpacing: 2 }}>核心指标</Text>
+            <Text style={{ fontSize: 68, fontWeight: 'bold', color: '#1F4E35', lineHeight: 1, marginTop: 14 }}>10</Text>
+            <Text style={{ fontSize: 19, color: '#44546A', marginTop: 12 }}>个，已建指标字典与 Owner</Text>
+        </Box>
+    </Box>
+
+    <Box style={{ marginTop: 20, flexDirection: 'row', gap: 24 }}>
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
+                <Box style={{ width: 4, height: 24, background: '#1F4E35' }} />
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#1F4E35' }}>基线判断</Text>
+            </Box>
+            <Text style={{ fontSize: 19, color: '#333333', lineHeight: 1.5, marginTop: 12 }}>
+                我们<span style={{ fontWeight: 'bold' }}>不是从零开始</span>：数据已在系统里跑，14 个系统已接入，指标口径已有雏形。
+                <Box style={{ height: 0 }} />
+                这意味着一期的短周期出成果是有依据的，而不是画饼。
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+            <Box style={{ flexDirection: 'row', alignItems: 'center', gap: 10 }}>
+                <Box style={{ width: 4, height: 24, background: '#1F4E35' }} />
+                <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#1F4E35' }}>但要看清短板</Text>
+            </Box>
+            <Text style={{ fontSize: 19, color: '#333333', lineHeight: 1.5, marginTop: 12 }}>
+                安全与标准两域仅 1 分，是全篇最低；<span style={{ fontWeight: 'bold' }}>246 张沉睡表</span>与 3 项质量不达标需先治理。
+                <Box style={{ height: 0 }} />
+                短板集中在"管"和"治"，正是本期要补的两道工序。
+            </Text>
+        </Box>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 24 }}>
+        <Text style={{ fontSize: 14, color: '#808080' }}>Source: DCMM 初评（GB/T 36073） ｜ 数据摸底摘要 ｜ Footnote: 沉睡表下架公示后再处理</Text>
+        <Text style={{ fontSize: 14, color: '#808080' }}>14</Text>
+    </Box>
+</Slide>

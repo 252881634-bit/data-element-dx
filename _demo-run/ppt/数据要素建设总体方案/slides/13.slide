@@ -1,0 +1,85 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '44px 60px 0 60px' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#062032', lineHeight: 1.28 }}>
+        七道工序全景，本期建设"汇存治管"
+    </Text>
+    <Box style={{ width: 1160, height: 1, background: '#000000', marginTop: 12 }} />
+
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 22, marginBottom: 10 }}>
+        <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1F4E35' }}>本期在建 / 规划（汇存治管）</Text>
+        <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#808080' }}>暂缓至二、三期（服用模）</Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', alignItems: 'center', height: 96, background: '#062032', paddingLeft: 0 }}>
+        <Box style={{ width: 130, justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+            <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#FFFFFF' }}>汇</Text>
+            <Text style={{ fontSize: 15, color: '#9FC7B4', marginTop: 4 }}>采集汇聚</Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>统一采集：6 家市场 + 7 个 Excel 台账统一入口</Text>
+            <Text style={{ fontSize: 17, color: '#C4DBCF', marginTop: 8 }}>消除 7 处纯手工汇总断点，数据一次进入、全程可溯</Text>
+        </Box>
+        <Box style={{ width: 132, height: 34, background: '#7FB89E', borderRadius: 17, justifyContent: 'center', alignItems: 'center', marginRight: 22 }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#062032' }}>在建</Text>
+        </Box>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', alignItems: 'center', height: 96, background: '#123A2A', marginTop: 8 }}>
+        <Box style={{ width: 130, justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+            <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#FFFFFF' }}>存</Text>
+            <Text style={{ fontSize: 15, color: '#9FC7B4', marginTop: 4 }}>存储计算</Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>四层存储：ODS → DWD → DWS → ADS</Text>
+            <Text style={{ fontSize: 17, color: '#C4DBCF', marginTop: 8 }}>不建中台——体量不支持，分层存储足够支撑当前规模</Text>
+        </Box>
+        <Box style={{ width: 132, height: 34, background: '#7FB89E', borderRadius: 17, justifyContent: 'center', alignItems: 'center', marginRight: 22 }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#062032' }}>在建</Text>
+        </Box>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', alignItems: 'center', height: 96, background: '#1F4E35', marginTop: 8 }}>
+        <Box style={{ width: 130, justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+            <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#FFFFFF' }}>治</Text>
+            <Text style={{ fontSize: 15, color: '#C4DBCF', marginTop: 4 }}>治理清洗</Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>标准 + 质量规则集 + 主数据（商户 One ID）</Text>
+            <Text style={{ fontSize: 17, color: '#D3E6DC', marginTop: 8 }}>优先修 3 项实测不达标：重复单号、外键断链、单位不统一</Text>
+        </Box>
+        <Box style={{ width: 132, height: 34, background: 'rgba(255,255,255,0.85)', borderRadius: 17, justifyContent: 'center', alignItems: 'center', marginRight: 22 }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#1F4E35' }}>规划</Text>
+        </Box>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', alignItems: 'center', height: 96, background: '#2F6A4E', marginTop: 8 }}>
+        <Box style={{ width: 130, justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+            <Text style={{ fontSize: 30, fontWeight: 'bold', color: '#FFFFFF' }}>管</Text>
+            <Text style={{ fontSize: 15, color: '#D3E6DC', marginTop: 4 }}>资产管理</Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+            <Text style={{ fontSize: 20, fontWeight: 'bold', color: '#FFFFFF' }}>目录 / 血缘 / 权限 / 审计四位一体</Text>
+            <Text style={{ fontSize: 17, color: '#E0EFE7', marginTop: 8 }}>补齐保留与删除流程、2 个无主业务域的 Owner——这是当前卡口</Text>
+        </Box>
+        <Box style={{ width: 132, height: 34, background: 'rgba(255,255,255,0.85)', borderRadius: 17, justifyContent: 'center', alignItems: 'center', marginRight: 22 }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#2F6A4E' }}>规划</Text>
+        </Box>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', alignItems: 'center', height: 76, background: '#F2F5F3', marginTop: 8 }}>
+        <Box style={{ width: 130, justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+            <Text style={{ fontSize: 26, fontWeight: 'bold', color: '#7FA797' }}>服 / 用 / 模</Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+            <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#44546A' }}>服务共享 / 应用变现 / 模型算法</Text>
+            <Text style={{ fontSize: 16, color: '#808080', marginTop: 6 }}>对外产品（价格指数、供需报告）与模型能力均在此层，二、三期启动</Text>
+        </Box>
+        <Box style={{ width: 132, height: 34, background: '#E7E6E6', borderRadius: 17, justifyContent: 'center', alignItems: 'center', marginRight: 22 }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#808080' }}>暂缓</Text>
+        </Box>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 20 }}>
+        <Text style={{ fontSize: 14, color: '#808080' }}>Source: 架构蓝图七层结论 ｜ Footnote: 治理卡口当前不通过（保留删除流程缺失、2 域无 Owner）</Text>
+        <Text style={{ fontSize: 14, color: '#808080' }}>13</Text>
+    </Box>
+</Slide>

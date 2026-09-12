@@ -1,0 +1,57 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '44px 60px 0 60px' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#062032', lineHeight: 1.28 }}>
+        四类价值：降本、增效、增收、风控
+    </Text>
+    <Box style={{ width: 1160, height: 1, background: '#000000', marginTop: 12 }} />
+
+    <Box style={{ flexDirection: 'row', gap: 20, marginTop: 22, height: 340 }}>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#1F4E35', padding: 22 }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#9FD8BC', letterSpacing: 2 }}>降本</Text>
+            <Text style={{ fontSize: 44, fontWeight: 'bold', color: '#FFFFFF', lineHeight: 1.05, marginTop: 12 }}>百人日级</Text>
+            <Text style={{ fontSize: 17, color: '#C4DBCF', marginTop: 8 }}>年化节约（日报汇总自动化）</Text>
+            <Box style={{ width: '100%', height: 1, background: 'rgba(255,255,255,0.22)', marginTop: 16 }} />
+            <Text style={{ fontSize: 17, color: '#FFFFFF', lineHeight: 1.45, marginTop: 14 }}>
+                现状 2 人 × 半日/天 手工汇总；报表编制再加 6 家 × 2 日/月
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#F2F5F3', padding: 22 }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#7FA797', letterSpacing: 2 }}>增效</Text>
+            <Text style={{ fontSize: 44, fontWeight: 'bold', color: '#1F4E35', lineHeight: 1.05, marginTop: 12 }}>T+3 → T+1</Text>
+            <Text style={{ fontSize: 17, color: '#44546A', marginTop: 8 }}>经营数据时效（缩短 2 天）</Text>
+            <Box style={{ width: '100%', height: 1, background: '#C4DBCF', marginTop: 16 }} />
+            <Text style={{ fontSize: 17, color: '#062032', lineHeight: 1.45, marginTop: 14 }}>
+                价格异常发现从"周级"提前到"当日"；口径争议查字典即明
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#F2F5F3', padding: 22 }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#7FA797', letterSpacing: 2 }}>增收</Text>
+            <Text style={{ fontSize: 44, fontWeight: 'bold', color: '#1F4E35', lineHeight: 1.05, marginTop: 12 }}>百万级</Text>
+            <Text style={{ fontSize: 17, color: '#44546A', marginTop: 8 }}>潜在收入机会（需市场验证）</Text>
+            <Box style={{ width: '100%', height: 1, background: '#C4DBCF', marginTop: 16 }} />
+            <Text style={{ fontSize: 17, color: '#062032', lineHeight: 1.45, marginTop: 14 }}>
+                价格指数形成区域参考 + 供需报告订阅 + 数据源授权
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, flexDirection: 'column', background: '#1F4E35', padding: 22 }}>
+            <Text style={{ fontSize: 17, fontWeight: 'bold', color: '#9FD8BC', letterSpacing: 2 }}>风控</Text>
+            <Text style={{ fontSize: 44, fontWeight: 'bold', color: '#FFFFFF', lineHeight: 1.05, marginTop: 12 }}>不可见→可控</Text>
+            <Text style={{ fontSize: 17, color: '#C4DBCF', marginTop: 8 }}>合规与可信度状态</Text>
+            <Box style={{ width: '100%', height: 1, background: 'rgba(255,255,255,0.22)', marginTop: 16 }} />
+            <Text style={{ fontSize: 17, color: '#FFFFFF', lineHeight: 1.45, marginTop: 14 }}>
+                质量 6 维实测、3 项不达标已识别 —— 问题可见即可控
+            </Text>
+        </Box>
+    </Box>
+
+    <Box style={{ marginTop: 18, flexDirection: 'row', alignItems: 'center', gap: 16, background: '#F2F5F3', borderRadius: 4, padding: '16px 24px' }}>
+        <Box style={{ width: 4, height: 38, background: '#1F4E35' }} />
+        <Text style={{ fontSize: 18, color: '#062032', lineHeight: 1.45, flex: 1 }}>
+            口径说明：降本类为<span style={{ fontWeight: 'bold' }}>年化</span>口径；增收类对外只给<span style={{ fontWeight: 'bold' }}>量级与区间，不做绝对承诺</span>；无法量化项一律标注"待评估"。
+        </Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 16 }}>
+        <Text style={{ fontSize: 14, color: '#808080' }}>Source: 价值量化表（场景地图 + 指标字典 + 架构路线图交叉测算）</Text>
+        <Text style={{ fontSize: 14, color: '#808080' }}>08</Text>
+    </Box>
+</Slide>

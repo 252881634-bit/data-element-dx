@@ -1,0 +1,57 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '44px 60px 0 60px' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#062032', lineHeight: 1.28 }}>
+        先补汇存治管地基，再上服用模价值层
+    </Text>
+    <Box style={{ width: 1160, height: 1, background: '#000000', marginTop: 12 }} />
+
+    <Box style={{ marginTop: 26, flexDirection: 'row', justifyContent: 'center' }}>
+        <Box style={{ width: 0, height: 0, borderLeft: '190px solid transparent', borderRight: '190px solid transparent', borderBottom: '86px solid #062032' }} />
+    </Box>
+    <Box style={{ justifyContent: 'center', alignItems: 'center', marginTop: -58 }}>
+        <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#FFFFFF' }}>使命：成为区域农产品行业核心数据源</Text>
+    </Box>
+
+    <Box style={{ marginTop: 26, height: 52, background: '#1F4E35', justifyContent: 'center', alignItems: 'center' }}>
+        <Text style={{ fontSize: 24, fontWeight: 'bold', color: '#FFFFFF' }}>
+            战略目标：三年内建成可信、可用、可变现的集团数据资产体系
+        </Text>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', gap: 18, marginTop: 16, height: 172 }}>
+        <Box style={{ flex: 1, background: '#2F6A4E', padding: '16px 18px' }}>
+            <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#FFFFFF' }}>统一采集</Text>
+            <Text style={{ fontSize: 17, color: '#D3E6DC', lineHeight: 1.45, marginTop: 10 }}>
+                6 家市场 + 7 个 Excel 台账统一入口，替代手工汇总
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, background: '#2F6A4E', padding: '16px 18px' }}>
+            <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#FFFFFF' }}>统一定义</Text>
+            <Text style={{ fontSize: 17, color: '#D3E6DC', lineHeight: 1.45, marginTop: 10 }}>
+                10 个核心指标口径一致，单位统一，一数一源
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, background: '#2F6A4E', padding: '16px 18px' }}>
+            <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#FFFFFF' }}>统一权责</Text>
+            <Text style={{ fontSize: 17, color: '#D3E6DC', lineHeight: 1.45, marginTop: 10 }}>
+                每个数据集一个具名 Owner，权属关系写清楚
+            </Text>
+        </Box>
+        <Box style={{ flex: 1, background: '#2F6A4E', padding: '16px 18px' }}>
+            <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#FFFFFF' }}>统一出口</Text>
+            <Text style={{ fontSize: 17, color: '#D3E6DC', lineHeight: 1.45, marginTop: 10 }}>
+                对外数据一律经合规校验后输出，先聚合后明细
+            </Text>
+        </Box>
+    </Box>
+
+    <Box style={{ marginTop: 16, height: 46, background: '#7FB89E', justifyContent: 'center', alignItems: 'center' }}>
+        <Text style={{ fontSize: 21, fontWeight: 'bold', color: '#062032' }}>
+            战略举措：建地基 → 治数据 → 出产品 → 定标准
+        </Text>
+    </Box>
+
+    <Box style={{ marginTop: 14, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+        <Text style={{ fontSize: 14, color: '#808080' }}>Source: 架构蓝图结论 ｜ Footnote: 明确不建数据中台（体量不支持，且尚无统一数据组织）</Text>
+        <Text style={{ fontSize: 14, color: '#808080' }}>11</Text>
+    </Box>
+</Slide>

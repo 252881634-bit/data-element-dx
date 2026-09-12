@@ -1,0 +1,88 @@
+<Slide style={{ width: 1280, height: 720, background: '#FFFFFF', padding: '44px 60px 0 60px' }}>
+    <Text style={{ fontSize: 34, fontWeight: 'bold', color: '#062032', lineHeight: 1.28 }}>
+        从"市场运营商"到"行业数据定价参考"
+    </Text>
+    <Box style={{ width: 1160, height: 1, background: '#000000', marginTop: 12 }} />
+
+    <Box style={{ flexDirection: 'row', gap: 30, marginTop: 34 }}>
+        <Box style={{ width: 700, flexDirection: 'column' }}>
+            <Box style={{ width: 700, flexDirection: 'row', justifyContent: 'space-between', marginBottom: 8 }}>
+                <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#808080' }}>有机会但暂不做</Text>
+                <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#1F4E35' }}>高价值 · 高可行 = 优先落地</Text>
+            </Box>
+            <Box style={{ width: 700, height: 392, position: 'relative', background: '#F2F5F3' }}>
+                <Box style={{ position: 'absolute', top: 196, left: 0, width: 700, height: 1, background: '#C4DBCF' }} />
+                <Box style={{ position: 'absolute', top: 0, left: 350, width: 1, height: 392, background: '#C4DBCF' }} />
+
+                <Box style={{ position: 'absolute', top: 22, left: 22, width: 16, height: 16, borderRadius: 8, background: '#C4DBCF' }} />
+                <Text style={{ position: 'absolute', top: 18, left: 46, fontSize: 17, fontWeight: 'bold', color: '#5A6B63' }}>办公流程数字化</Text>
+                <Text style={{ position: 'absolute', top: 44, left: 46, fontSize: 15, color: '#808080' }}>与数据主线无关</Text>
+
+                <Box style={{ position: 'absolute', top: 116, left: 22, width: 18, height: 18, borderRadius: 9, background: '#7FB89E' }} />
+                <Text style={{ position: 'absolute', top: 112, left: 48, fontSize: 17, fontWeight: 'bold', color: '#3A6B54' }}>商户满意度调研</Text>
+                <Text style={{ position: 'absolute', top: 138, left: 48, fontSize: 15, color: '#808080' }}>属业务运营，非数据产品</Text>
+
+                <Box style={{ position: 'absolute', top: 30, left: 386, width: 24, height: 24, borderRadius: 12, background: '#1F4E35' }} />
+                <Text style={{ position: 'absolute', top: 22, left: 418, fontSize: 19, fontWeight: 'bold', color: '#1F4E35' }}>行业价格指数发布</Text>
+                <Text style={{ position: 'absolute', top: 48, left: 418, fontSize: 15, color: '#44546A' }}>战略主线 · 中远期</Text>
+
+                <Box style={{ position: 'absolute', top: 96, left: 452, width: 16, height: 16, borderRadius: 8, background: '#5A8E77' }} />
+                <Text style={{ position: 'absolute', top: 92, left: 476, fontSize: 17, fontWeight: 'bold', color: '#3A6B54' }}>供应链金融服务</Text>
+
+                <Box style={{ position: 'absolute', top: 142, left: 420, width: 16, height: 16, borderRadius: 8, background: '#5A8E77' }} />
+                <Text style={{ position: 'absolute', top: 138, left: 444, fontSize: 17, fontWeight: 'bold', color: '#3A6B54' }}>跨区域产销匹配</Text>
+
+                <Box style={{ position: 'absolute', top: 296, left: 96, width: 16, height: 16, borderRadius: 8, background: '#7FA797' }} />
+                <Text style={{ position: 'absolute', top: 292, left: 120, fontSize: 17, fontWeight: 'bold', color: '#44546A' }}>报表自动分发</Text>
+
+                <Box style={{ position: 'absolute', top: 250, left: 214, width: 16, height: 16, borderRadius: 8, background: '#7FA797' }} />
+                <Text style={{ position: 'absolute', top: 246, left: 238, fontSize: 17, fontWeight: 'bold', color: '#44546A' }}>冷库温控看板</Text>
+
+                <Box style={{ position: 'absolute', top: 340, left: 336, width: 16, height: 16, borderRadius: 8, background: '#7FA797' }} />
+                <Text style={{ position: 'absolute', top: 336, left: 360, fontSize: 17, fontWeight: 'bold', color: '#44546A' }}>招采价格对比</Text>
+
+                <Box style={{ position: 'absolute', top: 216, left: 452, width: 32, height: 32, borderRadius: 16, background: '#062032' }} />
+                <Text style={{ position: 'absolute', top: 224, left: 494, fontSize: 18, fontWeight: 'bold', color: '#062032' }}>经营驾驶舱</Text>
+                <Text style={{ position: 'absolute', top: 248, left: 494, fontSize: 15, color: '#44546A' }}>优先落地</Text>
+
+                <Box style={{ position: 'absolute', top: 296, left: 244, width: 28, height: 28, borderRadius: 14, background: '#062032' }} />
+                <Text style={{ position: 'absolute', top: 280, left: 256, fontSize: 18, fontWeight: 'bold', color: '#062032' }}>经营日报自动化</Text>
+
+                <Text style={{ position: 'absolute', top: 356, left: 6, fontSize: 15, color: '#808080' }}>低价值 · 低可行</Text>
+                <Box style={{ position: 'absolute', top: 342, left: 222, width: 120, height: 24, background: '#EAEFEC', borderRadius: 3 }} />
+                <Text style={{ position: 'absolute', top: 345, left: 232, fontSize: 15, fontWeight: 'bold', color: '#7FA797' }}>低价值 · 高可行</Text>
+            </Box>
+            <Box style={{ flexDirection: 'row', justifyContent: 'space-between', marginTop: 8 }}>
+                <Text style={{ fontSize: 15, color: '#808080' }}>低 ← 政策契合度</Text>
+                <Text style={{ fontSize: 15, color: '#808080' }}>业务价值：低 → 高</Text>
+            </Box>
+        </Box>
+
+        <Box style={{ flex: 1, flexDirection: 'column' }}>
+            <Box style={{ flexDirection: 'column', background: '#062032', padding: 22 }}>
+                <Text style={{ fontSize: 16, fontWeight: 'bold', color: '#9FC7B4', letterSpacing: 2 }}>最有想象空间的一件事</Text>
+                <Text style={{ fontSize: 26, fontWeight: 'bold', color: '#FFFFFF', lineHeight: 1.3, marginTop: 12 }}>
+                    让我们的价格<Box style={{ height: 0 }} />成为行业参考价
+                </Text>
+                <Text style={{ fontSize: 18, color: '#C4DBCF', lineHeight: 1.5, marginTop: 14 }}>
+                    指数一旦被行业引用，我们就不再只是"收租的市场"，
+                    而是<span style={{ color: '#FFFFFF', fontWeight: 'bold' }}>定义价格的人</span>。
+                </Text>
+            </Box>
+
+            <Box style={{ flexDirection: 'column', marginTop: 18, borderLeft: '2px solid #1F4E35', paddingLeft: 16 }}>
+                <Text style={{ fontSize: 19, fontWeight: 'bold', color: '#1F4E35' }}>但必须说清前置</Text>
+                <Text style={{ fontSize: 18, color: '#333333', lineHeight: 1.5, marginTop: 10 }}>
+                    单位统一 → 跨区域数据源 → 指数方法论 → 公信力建设。
+                    <Box style={{ height: 0 }} />
+                    <span style={{ color: '#808080' }}>不能跳过前置直接发布指数。</span>
+                </Text>
+            </Box>
+        </Box>
+    </Box>
+
+    <Box style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginTop: 18 }}>
+        <Text style={{ fontSize: 14, color: '#808080' }}>Source: 应用场景地图四象限（业务价值 × 落地可行性） ｜ 共 12 个候选场景</Text>
+        <Text style={{ fontSize: 14, color: '#808080' }}>09</Text>
+    </Box>
+</Slide>
