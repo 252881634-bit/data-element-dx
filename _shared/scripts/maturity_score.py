@@ -87,7 +87,8 @@ def score(scores: Dict[str, float]) -> Dict:
 
 def main():
     if len(sys.argv) > 1:
-        with open(sys.argv[1], "r", encoding="utf-8") as f:
+        # utf-8-sig：兼容 Windows（PowerShell Set-Content 写入的 UTF-8 带 BOM）
+        with open(sys.argv[1], "r", encoding="utf-8-sig") as f:
             data = json.load(f)
     else:
         data = json.load(sys.stdin)

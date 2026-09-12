@@ -3,6 +3,22 @@
 本文件记录 data-element-dx-skillkit 的所有重要变更。
 格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [2.0.1] - 2026-09-12
+
+### 修复（2026-09-12 Windows 实机试跑发现）
+- **`maturity_score.py`**：Windows 下 PowerShell 写入的 UTF-8 JSON 带 BOM 导致 `json.load` 崩溃 → 读取改为 `utf-8-sig`。
+- **`scan_assets.py`**：扫描 CSV 表头被 BOM 污染首列名（`﻿device_id`）→ 表头读取改为 `utf-8-sig`。
+- **`gate_check.py`**：① 读取文档兼容 BOM（`utf-8-sig`）；② 修复"引号/括号内列举禁用词"误报（如校验表写"（保证/绝对）等用语"被抓）——新增引号对包裹豁免 + "承诺用语/复检/红线"语境豁免 + 否定词补充（未/未发现/未见）。
+- 反向验证：真实违规用语（"保证……百分之百，必定成功"）仍能 100% 捕获。
+
+### 新增
+- **`README.en.md`** —— 英文版 README，主打公共数据运营 + 数据资产入表（国际差异化视角）。
+- **`_shared/eval/trigger-eval.md`** —— 7 技能触发测试集（应触发/不应触发样例 + 交叉冲突收敛规则），用于 description 回归。
+- **gotchas 沉淀**：`dx-data-baseline` +2（BOM 约定、DCMM 判定偏乐观提醒）；`dx-engagement-orchestrator` +2（gate_check 元文档误报、数字台账措辞漏检）。
+
+### 修正
+- **`01-OPEN-SOURCE-PLAN.md`**：对外目录结构去掉 `skills/` 子目录方案——与技能内 `../_shared` 相对引用不兼容，明确当前平级结构即发布结构（含 `_shared/eval/`）。
+
 ## [2.0.0] - 2026-09-12
 
 七个技能全部升级为**生产级 v2.0**，套件具备开源条件。

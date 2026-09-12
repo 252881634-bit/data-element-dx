@@ -145,6 +145,8 @@ python _shared/scripts/scan_assets.py <目录> --out assets.csv
 - 摸底阶段**不要顺手做治理**：记录问题但不修，修是 dx-data-quality 的活。
 - **敏感级别要在摸底时就标定**（公开/内部/敏感/重要数据），否则后续架构阶段无法做访问控制设计。
 - 资产清单的"在用状态"（在用/沉睡/未用）必须标——沉睡表是后续治理的优先清理对象，但**删之前要下架公示，不能直接删**。
+- **Windows 下脚本输入必须兼容 BOM**（2026-09-12 试跑踩坑）：PowerShell `Set-Content -Encoding utf8` 写的 JSON/CSV 带 BOM，`maturity_score.py` 曾因此 `json.load` 崩溃、`scan_assets.py` 表头被 BOM 污染首列名。**已修复**（统一 `utf-8-sig` 读取）；新增脚本或手工构造输入时沿用此约定。
+- **DCMM 加权均值判定偏乐观**：8 域中 4 个 1 分也可能判"受管理级 2 级"（1.5 分落在 2 级区间）。看结果**必须对照短板域清单**，不能只报等级——对外材料建议同时给"总分 + 短板域数"。
 
 ## 复用与融合
 - **融合来源**：`csv-data-wrangler`（按规模选工具决策树）、`duckdb/duckdb-skills`（DuckDB 直查做表画像）。

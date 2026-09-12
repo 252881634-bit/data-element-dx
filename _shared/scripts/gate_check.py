@@ -27,16 +27,39 @@ STUB_WORDS = ['待补充', 'TODO', 'XXX', '__', '填空', '待填']
 # 绝对承诺用语（对外材料禁用）
 BANNED = ['保证', '一定能', '必定', '承诺达到', '绝对', '百分之百']
 # 反例/说明语境豁免词（命中则不算违规）
-EXEMPT_CTX = ['禁止', '错误表达', '不构成', '不做', '反例', '避免']
+EXEMPT_CTX = ['禁止', '错误表达', '不构成', '不做', '反例', '避免',
+              '承诺用语', '复检', '用语检查', '禁用词', '红线']
 # 否定语境前缀（紧邻禁用词前出现即豁免，如"不承诺收入绝对值""绝非绝对"）
-NEG_PREFIX = ['不', '非', '无', '没', '别', '勿', '禁止', '避免', '切勿']
+NEG_PREFIX = ['不', '非', '无', '没', '别', '勿', '禁止', '避免', '切勿', '未']
 # 否定短语（可出现在禁用词前若干字符内，如"不承诺……绝对"）
 NEG_PHRASES = ['不承诺', '不保证', '不能保证', '无法保证', '不建议', '不夸大',
-               '不构成', '不作', '不做', '不得', '不应', '不可', '非绝对']
+               '不构成', '不作', '不做', '不得', '不应', '不可', '非绝对',
+               '未发现', '未见', '未承诺', '无绝对']
+# 引号/括号配对（禁用词整体落在对内 = 列举/讨论语境，如（"保证/必定/绝对"等均无））
+QUOTE_PAIRS = [('“', '”'), ('‘', '’'), ('"', '"'), ("'", "'"),
+               ('（', '）'), ('(', ')'), ('「', '」'), ('『', '』')]
+
+
+def inside_quotes(t, start, end):
+    """判断 [start, end) 是否完全落在某对引号/括号内（列举语境豁免）。"""
+    for op, cl in QUOTE_PAIRS:
+        i = 0
+        while True:
+            i = t.find(op, i)
+            if i == -1:
+                break
+            j = t.find(cl, i + 1)
+            if j == -1:
+                break
+            if i < start and end <= j:
+                return True
+            i = j + 1
+    return False
 
 
 def read(path):
-    with io.open(path, encoding='utf-8') as f:
+    # utf-8-sig：兼容 Windows 下带 BOM 的 UTF-8 文本（PowerShell 写入场景）
+    with io.open(path, encoding='utf-8-sig') as f:
         return f.read()
 
 
@@ -102,6 +125,9 @@ def check(cwd, expects=None, numbers=None):
                 if any(np in pre for np in NEG_PHRASES):
                     continue
                 if any(pre.endswith(n) for n in NEG_PREFIX):
+                    continue
+                # 豁免三：禁用词整体落在引号/括号内（列举/讨论语境，非实际使用）
+                if inside_quotes(t, m.start(), m.end()):
                     continue
                 any_ban = True
                 print('  [WARN] %s 疑似违规用语「%s」上下文: ...%s...' % (f, w, ctx.replace('\n', ' ')))

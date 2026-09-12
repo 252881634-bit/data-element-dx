@@ -80,34 +80,44 @@
 
 ## 4. 对外目录结构（公开仓）
 
+> **结构约束（重要）**：技能内对共享底座是**相对路径引用**（`../_shared/...`），
+> 因此 **`dx-*` 技能目录必须与 `_shared/` 同级**，发布结构与本地结构保持一致。
+> 早期规划的 `skills/` 子目录方案与相对引用不兼容（拆入子目录后 `../_shared` 即断链），已弃用。
+> 安装到用户技能目录时同样保持同级（见 `HOW-TO-USE.md`）。
+
 ```
 data-element-dx/
-├── README.md                      # 中英双语（README.md + README.en.md）
+├── README.md                      # 中文主 README
+├── README.en.md                   # 英文 README（国际差异化：公共数据运营+入表）
 ├── LICENSE                        # Apache-2.0
 ├── NOTICE.md                      # 上游项目归属（data-governance 等）
 ├── 00-PLANNING.md                 # 规划（可开源）
 ├── 01-OPEN-SOURCE-PLAN.md         # 本方案
-├── skills/
-│   ├── dx-engagement-orchestrator/
-│   ├── dx-industry-research/
-│   ├── dx-competitor-scout/
-│   ├── dx-data-baseline/
-│   ├── dx-architecture-opt/
-│   ├── dx-data-quality/
-│   └── dx-application-plan/
+├── HOW-TO-USE.md                  # 安装与试跑说明
+├── CHANGELOG.md                   # 版本变更
+├── CONTRIBUTING.md                # 贡献指南
+├── 全景图.html                    # 一页可视化全景
+├── dx-engagement-orchestrator/    # 7 个技能（与 _shared 同级，相对引用生效）
+├── dx-industry-research/
+├── dx-competitor-scout/
+├── dx-data-baseline/
+├── dx-architecture-opt/
+├── dx-data-quality/
+├── dx-application-plan/
 ├── _shared/
 │   ├── references/                # 七道工序方法论/DCMM对标/政策索引/规则库
 │   ├── assets/                    # 指标字典/调研问卷/资产目录/架构蓝图模板
-│   └── scripts/                   # maturity_score.py / scan_assets.py
+│   ├── scripts/                   # maturity_score.py / scan_assets.py / gate_check.py
+│   └── eval/                      # 触发测试集（应触发/不应触发样例）
 ├── cases/                         # 案例层（接口开源，内容自建）
 │   ├── README.md                  # 接口规范 ✅
 │   ├── _template/                 # 空白模板 ✅
-│   └── sample-redacted/           # 脱敏样例（作者后续填）
+│   └── sample-redacted/           # 脱敏样例（虚构集团A）✅
+├── docs/images/                   # README 视觉素材
+├── _demo-run/                     # 端到端试跑产物（零敏感数据，公开）
 ├── .gitignore                     # 排除 cases/*/ 私有案例
 └── CONTRIBUTING.md                # 贡献指南
 ```
-
-> 与本地的差异：拆出 `skills/` 子目录（对齐 Agent Skills 生态惯例），案例层独立成 `cases/`。
 
 ---
 

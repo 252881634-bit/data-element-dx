@@ -33,7 +33,8 @@ def sniff_header(path: Path, max_bytes: int = 4096) -> str:
     if path.suffix.lower() not in {".csv", ".tsv"}:
         return ""
     try:
-        with path.open("r", encoding="utf-8", errors="ignore") as f:
+        # utf-8-sig：兼容带 BOM 的 CSV（Windows 常见），避免首列名被 BOM 污染
+        with path.open("r", encoding="utf-8-sig", errors="ignore") as f:
             first = f.readline(max_bytes).strip()
         return first[:200]
     except Exception:
