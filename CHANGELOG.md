@@ -6,8 +6,8 @@
 ## [2.0.3] - 2026-09-12
 
 ### ClawHub 收录完成（发布链路全通）
-- 技能已在 **ClawHub** 公开收录：https://clawhub.ai/252881634-bit/skills/data-element-dx-skillkit
-  - 安装：`openclaw skills install @252881634-bit/data-element-dx-skillkit`
+- 技能已在 **ClawHub** 公开收录：https://clawhub.ai/bdhunter/skills/data-element-dx-skillkit
+  - 安装：`openclaw skills install @bdhunter/data-element-dx-skillkit`
   - 公共目录可搜索、可匿名下载（v2.0.3，74.9KB）。
 - 新增根 **`SKILL.md`** 作为套件入口与路由文档（7 子技能 + `_shared` 相对引用在安装后保持有效）。
 - **安全审计修复（AIG T02 Agent Memory Poisoning）**：彻底移除“agent 回写技能文档”语义——gotchas 沉淀改为仅由主理人在复盘时手工记录到 `CHANGELOG.md`，Agent 不参与任何技能文档修改；ClawHub 安全审计由 suspicious 修复为 **benign（clean）**。
