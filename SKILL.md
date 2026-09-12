@@ -41,7 +41,7 @@ metadata:
 | `dx-competitor-scout` | 竞品 / 同业动态情报 | "同行怎么做数据""对标XX" |
 | `dx-industry-research` | 行业研究 / 政策解读 | "行业趋势""政策怎么看" |
 
-共享资源（`_shared/`）：脚本（`gate_check.py` 门禁、`scan_assets.py` 资产扫描、`maturity_score.py` 成熟度）、模板、gotchas 回写规范、触发器测试集（`_shared/eval/trigger-eval.md`）。
+共享资源（`_shared/`）：脚本（`gate_check.py` 门禁、`scan_assets.py` 资产扫描、`maturity_score.py` 成熟度）、模板、gotchas 维护规范、触发器测试集（`_shared/eval/trigger-eval.md`）。
 
 ## 使用流程
 
@@ -57,5 +57,5 @@ metadata:
 
 - **门禁**：每个交付物必须通过 `_shared/scripts/gate_check.py`（存在性 → 实质性 → 挂接性 → 一致性）。
 - **口径**：多材料交付必须维护数字台账，跨材料比对（`gate_check.py` 一致性检查）。
-- **Gotchas**：试跑中踩过的坑回写到对应技能 `SKILL.md` 的 gotchas 区（每条带后果），见 `_shared` 规范。
+- **Gotchas（人工维护，禁止 Agent 自动改写）**：试跑中的经验教训，由**项目主理人在复盘时人工审核后**再维护进对应技能 `SKILL.md` 的 gotchas 区（静态 Markdown 文档；每条需写明后果，并记入 `CHANGELOG.md`）。Agent 只负责在交付报告中提出建议，**不得自动修改任何技能文档内容**。
 - **虚构演示**：`_demo-run/` 与 README 中的"集团A/集团B"为完全虚构案例，非真实客户数据。
