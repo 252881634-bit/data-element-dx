@@ -3,7 +3,23 @@
 本文件记录 data-element-dx-skillkit 的所有重要变更。
 格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [2.0.3] - 2026-09-12
+
+### ClawHub 收录完成（发布链路全通）
+- 技能已在 **ClawHub** 公开收录：https://clawhub.ai/252881634-bit/skills/data-element-dx-skillkit
+  - 安装：`openclaw skills install @252881634-bit/data-element-dx-skillkit`
+  - 公共目录可搜索、可匿名下载（v2.0.3，74.9KB）。
+- 新增根 **`SKILL.md`** 作为套件入口与路由文档（7 子技能 + `_shared` 相对引用在安装后保持有效）。
+- **安全审计修复（AIG T02 Agent Memory Poisoning）**：彻底移除“agent 回写技能文档”语义——gotchas 沉淀改为仅由主理人在复盘时手工记录到 `CHANGELOG.md`，Agent 不参与任何技能文档修改；ClawHub 安全审计由 suspicious 修复为 **benign（clean）**。
+- README 增加 ClawHub 徽章与一键安装命令（ClawHub/OpenClaw 生态）。
+
+## [2.0.2] - 2026-09-12
+
+### 修复（ClawHub 安全审查触发）
+- **根 SKILL.md / dx-engagement-orchestrator**：gotchas 维护措辞改为“主理人复盘后人工维护、Agent 不自动修改”，消除“持久改写技能指令”语义（ClawHub AIG 扫描点）。
+
 ## [2.0.1] - 2026-09-12
+
 
 ### 修复（2026-09-12 Windows 实机试跑发现）
 - **`maturity_score.py`**：Windows 下 PowerShell 写入的 UTF-8 JSON 带 BOM 导致 `json.load` 崩溃 → 读取改为 `utf-8-sig`。

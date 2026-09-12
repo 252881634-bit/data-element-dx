@@ -6,10 +6,11 @@
 </p>
 
 <p align="center">
-  <img alt="version" src="https://img.shields.io/badge/version-2.0-1F4E35" />
+  <img alt="version" src="https://img.shields.io/badge/version-2.0.3-1F4E35" />
   <img alt="license" src="https://img.shields.io/badge/license-Apache--2.0-062032" />
   <img alt="skills" src="https://img.shields.io/badge/skills-7-1F4E35" />
   <img alt="language" src="https://img.shields.io/badge/lang-中文%20%7C%20EN-062032" />
+  <a href="https://clawhub.ai/252881634-bit/skills/data-element-dx-skillkit"><img alt="clawhub" src="https://img.shields.io/badge/ClawHub-published-062032" /></a>
   <br />
   <sub><b>面向中国国企与线下平台型集团</b>的数据要素转型交付套件 —— 不是教程，是能直接交给董事长的东西。</sub>
 </p>
@@ -62,6 +63,16 @@
 ## 快速上手
 
 ### 安装
+
+**ClawHub 一键安装（OpenClaw 生态）**
+
+```bash
+openclaw skills install @252881634-bit/data-element-dx-skillkit
+```
+
+> 公开页：https://clawhub.ai/252881634-bit/skills/data-element-dx-skillkit
+
+**本地拷贝（任意 AI 客户端）**
 
 ```bash
 # 用户级（跨项目可用）
